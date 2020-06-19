@@ -52,5 +52,13 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  pwa: {
+    manifest: {
+      name: 'Menu Dim Sum',
+      short_name: 'dimsum',
+      theme_color: "#efd9a8",
+      background_color: "#efd9a8"
+    }
   }
 }
