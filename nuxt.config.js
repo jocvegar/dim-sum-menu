@@ -60,10 +60,10 @@ export default {
       short_name: 'dimsum',
       theme_color: "#efd9a8",
       background_color: "#efd9a8"
-    },
-    workbox: {
-      offline: true,
-      offlinePage: '/offline.html'
     }
+  },
+  generate: {
+    fallback: true, // if you want to use '404.html' instead of the default '200.html'
+    // fallback: 'my-fallback/file.html' // if your hosting needs a custom location
   }
 }
