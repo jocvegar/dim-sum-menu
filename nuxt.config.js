@@ -22,6 +22,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -59,6 +60,10 @@ export default {
       short_name: 'dimsum',
       theme_color: "#efd9a8",
       background_color: "#efd9a8"
+    },
+    workbox: {
+      offline: true,
+      offlinePage: '/offline.html'
     }
   }
 }

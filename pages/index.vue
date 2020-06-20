@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <logo />
+       <nuxt-link to="/about">About</nuxt-link>
       <h1 class="title">
         dim-sum
       </h1>
