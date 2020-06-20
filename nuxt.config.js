@@ -57,7 +57,7 @@ export default {
   pwa: {
     manifest: {
       name: 'Menu Dim Sum',
-      short_name: 'dimsum',
+      short_name: 'wanfu',
       theme_color: "#efd9a8",
       background_color: "#efd9a8"
     }
