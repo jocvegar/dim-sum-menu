@@ -7,7 +7,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div v-for="item in items" :key="item.id" >
                 <div class="w-full">
-                    <div class="border border-gray-400 bg-gray-200 rounded-md px-6 py-2 flex flex-col justify-around leading-normal my-2 h-40">
+                    <div class="border border-gray-400 bg-gray-200 rounded-md px-6 py-2 flex flex-col justify-around leading-normal my-2 h-48">
                         <div class="mb-1">
                             <div class="text-gray-900 font-bold text-xl mb-1 title"> {{ item.title | upcase }}</div>
                             <p class="text-gray-700 text-base description">{{ item.description }}</p>

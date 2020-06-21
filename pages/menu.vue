@@ -1,8 +1,6 @@
 <template>
-  <section class="mx-auto px-5 my-6">
-        <div class="menu">
-            <Menu />
-        </div>
+  <section class="menu">
+        <Menu />
     </section> 
 </template>
 

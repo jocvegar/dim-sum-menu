@@ -12,20 +12,20 @@
     </section> 
     <section class="mx-auto px-5 my-5">
        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="flex flex-col items-center justify-around bg-brown-500 h-40 pt-5 text-gray-800 rounded-lg">
+          <div class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg">
             <i class="fa fa-phone text-4xl"></i>
             <p class="font-medium text-lg text-center">
               Has tu pedido un día antes <br>
               <span class="font-black">9992-3803</span>
             </p>
           </div>
-          <div class="flex flex-col items-center justify-around bg-brown-500 h-40 pt-5 text-gray-800 rounded-lg">
+          <div class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg">
             <i class="fas fa-car text-4xl"></i>
             <p class="font-medium text-lg text-center">
               Por los momentos solamente pick-up!
             </p>
           </div>
-            <div class="flex flex-col items-center justify-around bg-brown-500 h-40 pt-5 text-gray-800 rounded-lg">
+            <div class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg">
             <i class="far fa-calendar-alt text-4xl"></i>
             <p class="font-medium text-lg text-center">
               Comida se entrega los días viernes 
