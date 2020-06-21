@@ -16,7 +16,7 @@
 
     <div :class="open ? 'block showMe': 'hidden hideMe'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
       <div class="text-base sm:flex-grow">
-         <nuxt-link 
+         <!-- <nuxt-link 
             @click.native="open = false"
             to="/contact" 
             class="no-underline block mt-4 sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
@@ -27,7 +27,7 @@
             to="/fotos" 
             class="no-underline block mt-4 sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
             Fotos
-          </nuxt-link>
+          </nuxt-link> -->
       </div>
       <div>
           <nuxt-link 
@@ -84,5 +84,4 @@ export default {
         opacity: 1;
     }
 }
-
 </style>

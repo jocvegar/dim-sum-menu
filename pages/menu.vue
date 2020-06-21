@@ -1,17 +1,17 @@
 <template>
-  <section class="mx-auto px-5">
-        <div class="flex mb-4">
-            <div class="w-full bg-gray-500 h-auto p-5">
-                <h1 class="text-center text-2xl">Menu</h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatem unde aspernatur dolore a harum. Maxime facilis, earum odit, explicabo odio fugiat illum repellat eaque delectus suscipit minima iusto. Saepe.
-            </div>
+  <section class="mx-auto px-5 my-6">
+        <div class="menu">
+            <Menu />
         </div>
     </section> 
 </template>
 
 <script>
+import Menu from '~/components/Menu.vue'
 export default {
-
+    components: {
+        Menu
+    },
 }
 </script>
 
