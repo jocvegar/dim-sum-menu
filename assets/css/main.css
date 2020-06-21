@@ -4,11 +4,3 @@
 .page-enter, .page-leave-to {
     opacity: 0;
 }
-
-h1  {
-  color: red;
-}
-
-h4 {
-  color: aqua;
-}

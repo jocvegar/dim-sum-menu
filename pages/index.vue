@@ -1,40 +1,50 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-       <nuxt-link to="/about">About</nuxt-link>
-      <h1 class="title">
-        dim-sum
-      </h1>
-      <h2 class="subtitle">
-        Menu de dim sum
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div class="index">
+    <section class="hero py-24 md:py-48 bg-cover bg-center">
+      <div class="container mx-auto px-6 md:px-10">
+        <h2 class="title text-6xl font-bold mb-1 text-white text-center sm:text-left">
+          Wan Fu
+        </h2>
+        <h3 class="subtitle text-2xl font-medium mb-2 text-gray-200 text-center sm:text-left">
+          Desayanos chino Dim Sum
+        </h3>
       </div>
-    </div>
+    </section> 
+    <section class="mx-auto px-5 my-5">
+       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="flex flex-col items-center justify-around bg-brown-400 h-40 pt-5 text-gray-200 rounded-lg">
+            <i class="fa fa-phone text-4xl"></i>
+            <p class="font-medium text-lg text-center">
+              Has tu pedido un día antes <br>
+              <span class="font-black">9992-3803</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center justify-around bg-brown-400 h-40 pt-5 text-gray-200 rounded-lg">
+            <i class="fas fa-car text-4xl"></i>
+            <p class="font-medium text-lg text-center">
+              Por los momentos solamente pick-up!
+            </p>
+          </div>
+            <div class="flex flex-col items-center justify-around bg-brown-400 h-40 pt-5 text-gray-200 rounded-lg">
+            <i class="far fa-calendar-alt text-4xl"></i>
+            <p class="font-medium text-lg text-center">
+              Comida se entrega los días viernes 
+            </p>
+          </div>
+        </div>
+    </section>
+    <section class="menu">
+      <Menu />
+    </section>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Menu from '~/components/Menu.vue'
 
 export default {
   components: {
-    Logo
+    Menu
   },
   data() {
     return {
@@ -49,41 +59,27 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.hero {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  ),
+  url(https://source.unsplash.com/GZe_M6TUJ_k/1600x900)
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  font-family: 'Sriracha', cursive;
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  font-family: 'Montserrat', sans-serif;
 }
 /* .page-enter-active, .page-leave-active {
     transition: opacity 5s;
