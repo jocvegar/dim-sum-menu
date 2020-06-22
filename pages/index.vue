@@ -13,9 +13,11 @@
     <section class="mx-auto px-5 my-5">
        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg">
-            <i class="fa fa-phone text-4xl"></i>
+            <a href="tel:99223803" class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
+                <i class="fa fa-phone text-4xl" aria-hidden="true"></i>
+            </a>
             <p class="font-medium text-lg text-center">
-              Has tu pedido con anticipación<br>
+              Haz tu pedido con anticipación<br>
               <span class="font-black">9992-3803</span>
             </p>
           </div>
