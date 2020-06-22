@@ -1,26 +1,29 @@
 <template>
-    <div class="container mx-auto px-4">
-        <h1 v-if="$nuxt.$route.name != 'menu'" class="text-4xl text-center font-bold underline my-6">
-            NUESTRO MENU
-        </h1>
-        
+    <div class="container mx-auto px-6">
+        <div>
+            <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl text-center font-bold underline my-6">
+                MENU
+            </h1>
+        </div>
+
+        <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
+            <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
+            <input v-model="searchWord" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div v-for="item in items" :key="item.id" >
-                <div class="w-full">
-                    <div class="border border-gray-400 bg-gray-200 rounded-md px-6 py-2 flex flex-col justify-around leading-normal my-2 h-48">
-                        <div class="mb-1">
-                            <div class="text-gray-900 font-bold text-xl mb-1 title"> {{ item.title | upcase }}</div>
-                            <p class="text-gray-700 text-base description">{{ item.description }}</p>
-                        </div>
-                        <div class="text-sm">
-                            <p class="text-gray-900 leading-none">{{ item.units }}</p>
-                            <p class="text-gray-600">Lps. {{ item.price }}</p>
-                        </div>
+            <div v-for="item in filteredMenuItems" :key="item.id" class="h-32">
+                <div class="flex flex-col justify-around border-b min-h-full">
+                    <div class="mb-2">
+                        <h1 class="title text-lg font-bold">{{ item.title | upcase }}</h1>
+                        <h4 class="description text-base">{{ item.description }}</h4>
+                    </div>
+                    <div class="font-semibold">
+                        <p>{{ item.units }} x Lps. {{ item.price }}</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
@@ -29,11 +32,12 @@ export default {
     name: "Menu",
     data() {
         return {
+            searchWord: "",
             items: [
                 {
                     id: 1,
                     title: "siu mai (tapones)",
-                    description: "Hechos con cerdo y camarones",
+                    description: "Al vapor con carne de cerdo y camarones",
                     units: "4 unidades",
                     price: "60"
                 },
@@ -79,11 +83,19 @@ export default {
         upcase: function(value) {
             return value.toUpperCase();
         }
+    },
+    computed: {
+        filteredMenuItems() {
+            let word = this.searchWord
+            return this.items.filter((item) => {
+                return (item.title.toLowerCase().match(word) || item.description.toLowerCase().match(word))
+            })
+        },
     }
 }
 </script>
 
-<style>
+<style scoped>
 h1 {
     font-family: 'Montserrat', sans-serif; 
 }
@@ -93,5 +105,14 @@ h1 {
 }
 .description {
     font-family: 'Montserrat', sans-serif;
+}
+.menu {
+    font-family: 'Montserrat', sans-serif;
+}
+.fa-search {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
 }
 </style>

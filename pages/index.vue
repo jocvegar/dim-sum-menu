@@ -15,7 +15,7 @@
           <div class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg">
             <i class="fa fa-phone text-4xl"></i>
             <p class="font-medium text-lg text-center">
-              Has tu pedido un día antes <br>
+              Has tu pedido con anticipación<br>
               <span class="font-black">9992-3803</span>
             </p>
           </div>

@@ -30,6 +30,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '@/plugins/vue-collage-slideshow.js', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -54,7 +55,8 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    transpile: ['vue-collage-slideshow']
   },
   pwa: {
     manifest: {

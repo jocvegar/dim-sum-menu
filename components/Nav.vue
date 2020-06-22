@@ -15,27 +15,32 @@
     </div>
 
     <div :class="open ? 'block showMe': 'hidden hideMe'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
-      <div class="text-base sm:flex-grow">
-         <!-- <nuxt-link 
+        <div class="text-base sm:flex-grow">
+            <!-- <nuxt-link 
             @click.native="open = false"
             to="/contact" 
             class="no-underline block mt-4 sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
             Contacto
-          </nuxt-link>
-          <nuxt-link 
-            @click.native="open = false"
-            to="/fotos" 
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
-            Fotos
-          </nuxt-link> -->
-      </div>
+            </nuxt-link>-->
+            <nuxt-link 
+                @click.native="open = false"
+                to="/fotos" 
+                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
+                    Fotos
+            </nuxt-link> 
+            <a @click="open = false"
+                href="tel:99223803"
+                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
+                <i class="fa fa-phone px-2" aria-hidden="true"></i>
+            </a>
+        </div>
       <div>
-          <nuxt-link 
+        <nuxt-link 
             @click.native="open = false"
             to="/menu" 
             class="no-underline inline-block text-base px-4 py-2 leading-none border rounded text-brown-800 border-brown-800 hover:border-transparent hover:text-black hover:bg-brown-200 mt-4 sm:mt-0">
-            Menu
-          </nuxt-link>
+                Menu
+        </nuxt-link>
       </div>
     </div>
   </nav>
