@@ -10,6 +10,7 @@
             <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
             <input 
                 v-model="searchWord" 
+                v-on:input="search"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
         </div>
 
@@ -84,6 +85,11 @@ export default {
     filters: {
         upcase: function(value) {
             return value.toUpperCase();
+        }
+    },
+    methods: {
+        search() {
+            this.filteredMenuItems;
         }
     },
     computed: {
