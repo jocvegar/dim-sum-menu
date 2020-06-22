@@ -8,7 +8,9 @@
 
         <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
             <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
-            <input v-model="searchWord" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
+            <input 
+                v-model="searchWord" 
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -86,7 +88,7 @@ export default {
     },
     computed: {
         filteredMenuItems() {
-            let word = this.searchWord
+            let word = this.searchWord.toLowerCase();
             return this.items.filter((item) => {
                 return (item.title.toLowerCase().match(word) || item.description.toLowerCase().match(word))
             })
