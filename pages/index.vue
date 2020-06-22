@@ -78,7 +78,7 @@ export default {
     rgba(0, 0, 0, 0.4) 0%,
     rgba(0, 0, 0, 0.4) 100%
   ),
-  url(https://source.unsplash.com/GZe_M6TUJ_k/1600x900)
+  url('~static/hero.jpg')
 }
 
 .title {
