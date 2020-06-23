@@ -6,7 +6,7 @@
           Wan Fu
         </h2>
         <h3 class="subtitle text-2xl font-medium mb-2 text-gray-200 text-center sm:text-left">
-          Desayanos chino dim sum
+          Desayano Dim Sum
         </h3>
       </div>
     </section> 
@@ -41,7 +41,9 @@
     <section class="footer mt-5">
       <div class="grid grid-cols-1">
         <footer class="flex items-center flex-no-shrink justify-center bg-brown-800 h-20 text-center">
-           <img src="@/static/icon.png" alt="wan-fu">
+          <a @click="scrollToTop">
+            <img src="@/static/icon.png" alt="wan-fu">
+          </a>  
         </footer>
       </div>
     </section>
@@ -65,6 +67,15 @@ export default {
       return process.env.test;
     },
   },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    }
+  }
 }
 </script>
 
