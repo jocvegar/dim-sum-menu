@@ -21,7 +21,7 @@
                         <h1 class="title text-lg font-bold">{{ item.title | upcase }}</h1>
                         <h4 class="description text-base">{{ item.description }}</h4>
                     </div>
-                    <div class="font-semibold">
+                    <div class="font-semibold pb-1">
                         <p>{{ item.units }} x Lps. {{ item.price }}</p>
                     </div>
                 </div>
@@ -51,48 +51,55 @@ export default {
                     units: "2 unidades",
                     price: "90"
                 },
-                 {
+                {
                     id: 3,
                     title: "taco de arroz con cerdo",
                     description: "Al vapor con carne de cerdo chasiu",
                     units: "2 unidades",
-                    price: "70"
-                },
-                {
-                    id: 4,
-                    title: "panqueques chinos (scallion pancakes)",
-                    description: "Estilo crepa con carne de cerdo y cebollina",
-                    units: "2 unidades",
                     price: "80"
                 },
+                // {
+                //     id: 4,
+                //     title: "panqueques chinos (scallion pancakes)",
+                //     description: "Estilo crepa con carne de cerdo y cebollina",
+                //     units: "2 unidades",
+                //     price: "80"
+                // },
                 {
-                    id: 5,
+                    id: 4,
                     title: "Pastelitos de Carne",
                     description: "Pastelitos  de carne de cerdo y hongo shiitake fritos",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 6,
+                    id: 5,
                     title: "Pastelitos de Malanga",
                     description: "Pastelitos rellenos de carne de cerdo",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 7,
+                    id: 6,
                     title: "Pastelitos de Frijol",
                     description: "Pastelitos rellenos con frijol dulce, fritos y cubiertos con semillas de ajonjolí",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 8,
+                    id: 7,
                     title: "Pastelitos de Nabo",
                     description: "Pastelitos rellenos con carne de cerdo",
                     units: "2 unidades",
                     price: "65"
-                }
+                },
+                {
+                    id: 8,
+                    title: "cebollina",
+                    description: "Cebollina con salsa soya",
+                    units: "1 porción",
+                    price: "20"
+                },
             ]
         }
     },
