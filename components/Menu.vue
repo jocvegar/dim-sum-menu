@@ -44,57 +44,57 @@ export default {
                     units: "4 unidades",
                     price: "60"
                 },
-                {
+                 {
                     id: 2,
+                    title: "Wonto Frito",
+                    description: "Fritos y crujientes",
+                    units: "12 unidades",
+                    price: "150"
+                },
+                {
+                    id: 3,
                     title: "taco de arroz con camarones",
                     description: "Al vapor con camarones",
                     units: "2 unidades",
                     price: "90"
                 },
                 {
-                    id: 3,
+                    id: 4,
                     title: "taco de arroz con cerdo",
                     description: "Al vapor con carne de cerdo chasiu",
                     units: "2 unidades",
                     price: "80"
                 },
-                // {
-                //     id: 4,
-                //     title: "panqueques chinos (scallion pancakes)",
-                //     description: "Estilo crepa con carne de cerdo y cebollina",
-                //     units: "2 unidades",
-                //     price: "80"
-                // },
                 {
-                    id: 4,
+                    id: 5,
                     title: "Pastelitos de Carne",
                     description: "Pastelitos  de carne de cerdo y hongo shiitake fritos",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 5,
+                    id: 6,
                     title: "Pastelitos de Malanga",
                     description: "Pastelitos rellenos de carne de cerdo",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 6,
+                    id: 7,
                     title: "Pastelitos de Frijol",
                     description: "Pastelitos rellenos con frijol dulce, fritos y cubiertos con semillas de ajonjolí",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 7,
+                    id: 8,
                     title: "Pastelitos de Nabo",
                     description: "Pastelitos rellenos con carne de cerdo",
                     units: "2 unidades",
                     price: "65"
                 },
                 {
-                    id: 8,
+                    id: 9,
                     title: "cebollina",
                     description: "Cebollina con salsa soya",
                     units: "1 porción",
