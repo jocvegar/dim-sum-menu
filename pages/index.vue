@@ -17,7 +17,7 @@
                 <i class="fa fa-phone text-4xl" aria-hidden="true"></i>
             </a>
             <p class="font-medium text-lg text-center">
-              Haz tu pedido con anticipación<br>
+              Haz tu pedido con anticipación por <span class="font-light text-gray-800">WhatsApp</span><br>
               <span class="font-black">9992-3803</span>
             </p>
           </div>
