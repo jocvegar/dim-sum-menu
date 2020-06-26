@@ -30,43 +30,44 @@
 
 <script>
 export default {
-    components: {
-        // Slideshow: () => import('vue-collage-slideshow')
-    },
-    computed: {
-        slideshow() {
-            return () => {
-                if (process.client) {
-                    return import('vue-collage-slideshow')
-                }
-            }
+  components: {
+    // Slideshow: () => import('vue-collage-slideshow')
+  },
+  computed: {
+    slideshow() {
+      return () => {
+        if (process.client) {
+          return import('vue-collage-slideshow')
         }
-    },
-    data() {
-        return {
-            images: [
-                { image: require('~/assets/images/image-1.jpg') },
-                { image: require('~/assets/images/image-2.jpg') },
-                { image: require('~/assets/images/image-3.jpg') },
-                { image: require('~/assets/images/image-4.jpg') },
-                { image: require('~/assets/images/image-5.jpg') },
-                { image: require('~/assets/images/image-6.jpg') },
-                { image: require('~/assets/images/image-7.jpg') },
-                { image: require('~/assets/images/image-1.jpg') },
-                { image: require('~/assets/images/image-2.jpg') },
-                { image: require('~/assets/images/image-3.jpg') },
-                { image: require('~/assets/images/image-4.jpg') },
-                { image: require('~/assets/images/image-5.jpg') },
-                { image: require('~/assets/images/image-6.jpg') },
-                { image: require('~/assets/images/image-7.jpg') },
-            ]
-        }
+      }
     }
+  },
+  data() {
+    return {
+      images: [
+        { image: require('~/assets/images/image-1.jpg') },
+        { image: require('~/assets/images/image-2.jpg') },
+        { image: require('~/assets/images/image-3.jpg') },
+        { image: require('~/assets/images/image-4.jpg') },
+        { image: require('~/assets/images/image-5.jpg') },
+        { image: require('~/assets/images/image-6.jpg') },
+        { image: require('~/assets/images/image-7.jpg') },
+        { image: require('~/assets/images/image-8.jpg') },
+        { image: require('~/assets/images/image-9.jpg') },
+        { image: require('~/assets/images/image-10.jpg') },
+        { image: require('~/assets/images/image-11.jpg') },
+        { image: require('~/assets/images/image-12.jpg') },
+        { image: require('~/assets/images/image-13.jpg') },
+        { image: require('~/assets/images/image-14.jpg') },
+        { image: require('~/assets/images/image-15.jpg') }
+      ]
+    }
+  }
 }
 </script>
 
 <style scoped>
 .footer {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 </style>
