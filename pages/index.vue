@@ -2,7 +2,7 @@
   <div class="index">
     <section class="hero py-24 md:py-48 bg-cover bg-center">
       <div class="container mx-auto px-6 md:px-10">
-        <h2 class="title text-6xl font-bold mb-1 text-white text-center sm:text-left">
+        <h2 class="title text-6xl font-bold text-white text-center sm:text-left">
           Wan Fu
         </h2>
         <h3 class="subtitle text-2xl font-medium mb-2 text-gray-200 text-center sm:text-left">
@@ -64,8 +64,8 @@ export default {
   },
   computed: {
     message() {
-      return process.env.test;
-    },
+      return process.env.test
+    }
   },
   methods: {
     scrollToTop() {
@@ -87,11 +87,11 @@ export default {
 */
 .hero {
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(0, 0, 0, 0.4) 100%
-  ),
-  url('~static/hero.jpg')
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url('~static/hero.jpg');
 }
 
 .title {
