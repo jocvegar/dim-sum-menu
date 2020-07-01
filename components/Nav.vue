@@ -3,11 +3,11 @@
     <nuxt-link @click.native="open = false" to="/">
         <div class="flex items-center flex-no-shrink text-white mr-6">
             <img src="@/static/icon.png" alt="wan-fu">
-            <span class="font-semibold text-2xl text-gray-600 tracking-tight">Wan Fu</span>
+            <span class="font-semibold text-2xl text-brown-800 tracking-tight">Wan Fu</span>
         </div>
     </nuxt-link>    
     <div class="block sm:hidden">
-      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-white hover:border-white">
+      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-brown-800 border-gray-600 hover:text-white hover:border-white">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
@@ -19,18 +19,18 @@
             <!-- <nuxt-link 
             @click.native="open = false"
             to="/contact" 
-            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-gray-600 hover:text-white mr-4">
+            class="no-underline block mt-4 sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
             Contacto
             </nuxt-link>-->
             <nuxt-link 
                 @click.native="open = false"
                 to="/fotos" 
-                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-gray-600 hover:text-white mr-4">
+                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
                     Fotos
             </nuxt-link> 
             <a @click="open = false"
                 href="tel:99223803"
-                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-gray-600 hover:text-white mr-4">
+                class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
                 <i class="fa fa-phone px-2" aria-hidden="true"></i>
             </a>
         </div>
@@ -38,7 +38,7 @@
         <nuxt-link 
             @click.native="open = false"
             to="/menu" 
-            class="no-underline inline-block text-base px-4 py-2 leading-none border rounded text-gray-600 border-gray-600 hover:border-transparent hover:text-black hover:bg-brown-200 mt-4 sm:mt-0">
+            class="no-underline inline-block text-base px-4 py-2 leading-none border rounded text-brown-800 border-gray-600 hover:border-transparent hover:text-black hover:bg-brown-200 mt-4 sm:mt-0">
                 Menu
         </nuxt-link>
       </div>
