@@ -1,11 +1,12 @@
 <template>
     <div class="container mx-auto px-6">
-        <div>
-            <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl text-center font-bold underline my-6">
+        <div class="flex flex-col items-center">
+            <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
                 MENU
             </h1>
+            <p class="text-2xl font-semibold my-2">semana del 3 de julio 2020</p>
         </div>
-
+        <hr class="mt-1 mb-10">
         <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
             <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
             <input 
