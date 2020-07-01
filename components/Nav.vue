@@ -29,7 +29,7 @@
                     Fotos
             </nuxt-link> 
             <a @click="open = false"
-                href="https://wa.me/99223803"
+                href="https://wa.me/+50499223803"
                 target="_blank"
                 class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
                 Escríbenos
