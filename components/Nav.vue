@@ -29,9 +29,10 @@
                     Fotos
             </nuxt-link> 
             <a @click="open = false"
-                href="tel:99223803"
+                href="https://wa.me/99223803"
+                target="_blank"
                 class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
-                <i class="fa fa-phone px-2" aria-hidden="true"></i>
+                Escríbenos
             </a>
         </div>
       <div>
