@@ -4,14 +4,14 @@
             <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
                 MENU
             </h1>
-            <p class="text-2xl font-semibold my-2">semana del 3 de julio 2020</p>
+            <p class="text-2xl font-semibold my-2">semana del 10 de julio 2020</p>
         </div>
         <hr class="mt-1 mb-10">
         <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
             <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
             <input 
                 v-model="searchWord" 
-                v-on:input="search"
+                v-on:change="search"
                 class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
         </div>
 
@@ -52,20 +52,20 @@ export default {
           units: '12 unidades',
           price: '150'
         },
-        // {
-        //     id: 3,
-        //     title: "taco de arroz con camarones",
-        //     description: "Al vapor con camarones",
-        //     units: "2 unidades",
-        //     price: "90"
-        // },
-        // {
-        //     id: 4,
-        //     title: "taco de arroz con cerdo",
-        //     description: "Al vapor con carne de cerdo chasiu",
-        //     units: "2 unidades",
-        //     price: "80"
-        // },
+        {
+          id: 3,
+          title: "taco de arroz con camarones",
+          description: "Al vapor con camarones",
+          units: "2 unidades",
+          price: "90"
+        },
+        {
+          id: 4,
+          title: "taco de arroz con cerdo",
+          description: "Al vapor con carne de cerdo chasiu",
+          units: "2 unidades",
+          price: "80"
+        },
         {
           id: 5,
           title: 'Pastelitos de Carne',
@@ -80,14 +80,14 @@ export default {
           units: '2 unidades',
           price: '65'
         },
-        // {
-        //   id: 7,
-        //   title: 'Pastelitos de Frijol',
-        //   description:
-        //     'Pastelitos rellenos con frijol dulce, fritos y cubiertos con semillas de ajonjolí',
-        //   units: '2 unidades',
-        //   price: '65'
-        // },
+        {
+          id: 7,
+          title: 'Pastelitos de Frijol',
+          description:
+            'Pastelitos rellenos con frijol dulce, fritos y cubiertos con semillas de ajonjolí',
+          units: '2 unidades',
+          price: '65'
+        },
         {
           id: 8,
           title: 'Pastelitos de Nabo',
@@ -95,13 +95,13 @@ export default {
           units: '2 unidades',
           price: '65'
         },
-        {
-          id: 9,
-          title: 'Tai Pao (Steamed pork buns)',
-          description: 'Panecillos al vapor con carne de cerdo',
-          units: '2 unidades',
-          price: '65'
-        },
+        // {
+        //   id: 9,
+        //   title: 'Tai Pao (Steamed pork buns)',
+        //   description: 'Panecillos al vapor con carne de cerdo',
+        //   units: '2 unidades',
+        //   price: '65'
+        // },
         {
           id: 10,
           title: 'Tai Pao Al Horno(Sticky pork buns)',
