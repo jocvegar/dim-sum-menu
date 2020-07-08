@@ -47,7 +47,7 @@ export default {
         },
         {
           id: 2,
-          title: 'Wonto Frito',
+          title: 'Wonton Frito',
           description: 'Fritos y crujientes',
           units: '12 unidades',
           price: '150'
@@ -149,7 +149,7 @@ h1 {
 }
 .title {
   font-family: 'Sriracha', cursive;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.25px;
 }
 .description {
   font-family: 'Montserrat', sans-serif;
