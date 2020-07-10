@@ -5,9 +5,9 @@
                     <component
                         :is="slideshow"
                         :images="images"
-                        :collageSizeMin="5"
+                        :collageSizeMin="2"
                         :collageSizeMax="5"
-                        :slidesInterval="4000"
+                        :slidesInterval="5000"
                         :showNoImagesMsg="true"
                         noImagesMsg="No Images"
                         :showLoadingMsg="true"
@@ -59,7 +59,13 @@ export default {
         { image: require('~/assets/images/image-12.jpg') },
         { image: require('~/assets/images/image-13.jpg') },
         { image: require('~/assets/images/image-14.jpg') },
-        { image: require('~/assets/images/image-15.jpg') }
+        { image: require('~/assets/images/image-15.jpg') },
+        { image: require('~/assets/images/image-16.jpg') },
+        { image: require('~/assets/images/image-17.jpg') },
+        { image: require('~/assets/images/image-18.jpg') },
+        { image: require('~/assets/images/image-19.jpg') },
+        { image: require('~/assets/images/image-20.jpg') },
+        { image: require('~/assets/images/image-21.jpg') },
       ]
     }
   }
