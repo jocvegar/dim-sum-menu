@@ -20,7 +20,7 @@
           class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg"
         >
           <a
-            href="https://wa.me/+50499223803"
+            :href = phone_link
             class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4"
           >
             <i class="fa fa-phone text-4xl" aria-hidden="true"></i>
@@ -68,6 +68,8 @@
 
 <script>
 import Menu from '~/components/Menu.vue'
+import { isMobile } from 'mobile-device-detect';
+
 
 export default {
   components: {
@@ -81,6 +83,9 @@ export default {
   computed: {
     message() {
       return process.env.test
+    },
+    phone_link() {
+      return isMobile ? 'https://wa.me/+50499223803' : 'https://api.whatsapp.com/send?phone=+50499223803'
     }
   },
   methods: {

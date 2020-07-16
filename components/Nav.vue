@@ -29,7 +29,7 @@
                     Fotos
             </nuxt-link> 
             <a @click="open = false"
-                href="https://wa.me/+50499223803"
+                :href=phone_link
                 target="_blank"
                 class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
                 Escríbenos
@@ -48,6 +48,8 @@
 </template>
 
 <script>
+import { isMobile } from 'mobile-device-detect';
+
 export default {
   name: 'Nav',
   data() {
@@ -58,6 +60,11 @@ export default {
   methods: {
     toggle() {
       this.open = !this.open
+    }
+  },
+  computed: {
+    phone_link() {
+      return isMobile ? 'https://wa.me/+50499223803' : 'https://api.whatsapp.com/send?phone=+50499223803'
     }
   }
 }
