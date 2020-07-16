@@ -4,7 +4,7 @@
             <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
                 MENU
             </h1>
-            <p class="text-2xl font-semibold my-2">semana del 10 de julio 2020</p>
+            <p class="text-2xl font-semibold my-2">semana del 17 de julio 2020</p>
         </div>
         <hr class="mt-1 mb-10">
         <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
