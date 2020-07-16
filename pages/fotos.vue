@@ -6,7 +6,7 @@
                         :is="slideshow"
                         :images="images"
                         :collageSizeMin="2"
-                        :collageSizeMax="5"
+                        :collageSizeMax="3"
                         :slidesInterval="5000"
                         :showNoImagesMsg="true"
                         noImagesMsg="No Images"
@@ -66,6 +66,7 @@ export default {
         { image: require('~/assets/images/image-19.jpg') },
         { image: require('~/assets/images/image-20.jpg') },
         { image: require('~/assets/images/image-21.jpg') },
+        { image: require('~/assets/images/image-22.jpg') },
       ]
     }
   }
