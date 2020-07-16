@@ -88,13 +88,13 @@ export default {
           units: '2 unidades',
           price: '65'
         },
-        {
-          id: 8,
-          title: 'Pastelitos de Nabo',
-          description: 'Pastelitos rellenos con carne de cerdo',
-          units: '2 unidades',
-          price: '65'
-        },
+        // {
+        //   id: 8,
+        //   title: 'Pastelitos de Nabo',
+        //   description: 'Pastelitos rellenos con carne de cerdo',
+        //   units: '2 unidades',
+        //   price: '65'
+        // },
         // {
         //   id: 9,
         //   title: 'Tai Pao (Steamed pork buns)',
