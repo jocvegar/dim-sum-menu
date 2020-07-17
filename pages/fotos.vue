@@ -80,6 +80,8 @@ export default {
         { image: require('~/assets/images/image-33.jpg') },
         { image: require('~/assets/images/image-34.jpg') },
         { image: require('~/assets/images/image-35.jpg') },
+        { image: require('~/assets/images/image-36.jpg') },
+        { image: require('~/assets/images/image-37.jpg') },
       ]
     }
   }
