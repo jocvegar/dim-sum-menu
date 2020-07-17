@@ -1,6 +1,6 @@
 <template>
     <div>
-        <no-ssr>
+
         <vueper-slides 
             autoplay
             class="no-shadow"
@@ -25,7 +25,7 @@
                 :key="i"
                 :image="require(`~/assets/images/image-${slide.image}.jpg`)"/>
         </vueper-slides>
-        </no-ssr> 
+
         <div class="my-8">
             <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
                 Gracias por las fotos!

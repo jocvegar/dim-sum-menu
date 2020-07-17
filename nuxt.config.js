@@ -51,9 +51,7 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
+    publicPath: 'https://wan-fu.netlify.app/',
     extend (config, ctx) {
     },
     transpile: ['vue-collage-slideshow']
@@ -68,5 +66,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  router: {
+    base: 'https://wan-fu.netlify.app/'
   }
 }
