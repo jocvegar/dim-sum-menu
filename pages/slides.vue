@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <client-only>
         <vueper-slides 
             autoplay
             class="no-shadow"
@@ -23,8 +23,9 @@
             <vueper-slide
                 v-for="(slide, i) in slides"
                 :key="i"
-                :image="require(`~/assets/images/image-${slide.image}.jpg`)"/>
+                :image="getImage(slide.image)"/>
         </vueper-slides>
+        </client-only>
 
         <div class="my-8">
             <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
@@ -40,6 +41,11 @@ import 'vueperslides/dist/vueperslides.css'
 
 export default {
     components: { VueperSlides, VueperSlide },
+    methods: {
+        getImage(name) {
+            return require(`~/assets/images/image-${name}.jpg`)
+        },
+    },
     data: () => ({
         pauseOnHover: true,
         autoPlaying: true,

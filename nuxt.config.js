@@ -51,7 +51,6 @@ export default {
   ** Build configuration
   */
   build: {
-    publicPath: 'https://wan-fu.netlify.app/',
     extend (config, ctx) {
     },
     transpile: ['vue-collage-slideshow']
@@ -67,7 +66,4 @@ export default {
   generate: {
     fallback: true
   },
-  router: {
-    base: 'https://wan-fu.netlify.app/'
-  }
 }
