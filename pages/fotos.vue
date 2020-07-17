@@ -5,7 +5,7 @@
               <component
                   :is="slideshow"
                   :images="images"
-                  :collageSizeMin="2"
+                  :collageSizeMin="1"
                   :collageSizeMax="3"
                   :slidesInterval="5000"
                   :showNoImagesMsg="true"
