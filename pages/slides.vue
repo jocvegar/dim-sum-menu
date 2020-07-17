@@ -23,9 +23,6 @@
                 v-for="(slide, i) in slides"
                 :key="i"
                 :image="slide.image"/>
-                <template v-slot:pause>
-                    <i class="icon pause_circle_outline"></i>
-                </template>
         </vueper-slides>
         <div class="my-8">
             <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
@@ -44,7 +41,6 @@ export default {
     data: () => ({
         pauseOnHover: true,
         autoPlaying: true,
-        internalAutoPlaying: true,
         slides: [
             { image: require('~/assets/images/image-1.jpg') },  
             { image: require('~/assets/images/image-2.jpg') },  
