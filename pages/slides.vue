@@ -1,30 +1,27 @@
 <template>
     <div>
-        <client-only>
-            <vueper-slides 
-                autoplay
-                class="no-shadow"
-                :visible-slides="3"
-                slide-multiple
-                :infinite="true" 
-                :arrows="false"
-                :bullets="false"
-                :gap="1"
-                progress
-                lazy 
-                :slide-ratio="1 / 3"
-                :dragging-distance="70"
-                :breakpoints="{ 800: { 
-                    visibleSlides: 1, 
-                    slideRatio: 1,
-                    } 
-                }">
-                <vueper-slide
-                    v-for="(slide, i) in slides"
-                    :key="i"
-                    :image="require(`~/assets/images/image-${slide.image}.jpg`)"/>
-            </vueper-slides>
-        </client-only>
+        <vueper-slides 
+            autoplay
+            class="no-shadow"
+            :visible-slides="3"
+            slide-multiple
+            :infinite="true" 
+            :arrows="false"
+            :bullets="false"
+            :gap="1"
+            progress
+            :slide-ratio="1 / 3"
+            :dragging-distance="70"
+            :breakpoints="{ 800: { 
+                visibleSlides: 1, 
+                slideRatio: 1,
+                } 
+            }">
+            <vueper-slide
+                v-for="(slide, i) in slides"
+                :key="i"
+                :image="slide.image"/>
+        </vueper-slides>
 
         <div class="my-8">
             <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
@@ -41,26 +38,12 @@ import 'vueperslides/dist/vueperslides.css'
 export default {
     components: { VueperSlides, VueperSlide },
     data: () => ({
-        primarySrc: '',
-        pauseOnHover: true,
-        autoPlaying: true,
         slides: [
-            { image: 1 },
-            { image: 2 },
-            { image: 3 },
-            { image: 4 },
-            { image: 5 },
-            { image: 6 },
-            { image: 7 },
-            { image: 8 },
-            { image: 9 },
-            { image: 10 },
-            { image: 11 },
-            { image: 12 },
-            { image: 13 },
-            { image: 14 },
-            { image: 15 },
-
+            { image: require('@/assets/images/image-1.jpg') },
+            { image: require('@/assets/images/image-2.jpg') },
+            { image: require('@/assets/images/image-3.jpg') },
+            { image: require('@/assets/images/image-4.jpg') },
+            { image: require('@/assets/images/image-5.jpg') },
         ]
     })
 }
