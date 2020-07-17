@@ -22,7 +22,7 @@
             <vueper-slide
                 v-for="(slide, i) in slides"
                 :key="i"
-                :image="slide.image"/>
+                :image="getImage(slide.image)"/>
         </vueper-slides>
         <div class="my-8">
             <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
@@ -38,47 +38,52 @@ import 'vueperslides/dist/vueperslides.css'
 
 export default {
     components: { VueperSlides, VueperSlide },
+    methods: {
+        getImage(name) {
+            return require(`~/assets/images/image-${name}.jpg`)
+        }
+    },
     data: () => ({
         pauseOnHover: true,
         autoPlaying: true,
         slides: [
-            { image: require('~/assets/images/image-1.jpg') },  
-            { image: require('~/assets/images/image-2.jpg') },  
-            { image: require('~/assets/images/image-3.jpg') },  
-            { image: require('~/assets/images/image-4.jpg') },  
-            { image: require('~/assets/images/image-5.jpg') },  
-            { image: require('~/assets/images/image-6.jpg') },  
-            { image: require('~/assets/images/image-7.jpg') },  
-            { image: require('~/assets/images/image-8.jpg') },  
-            { image: require('~/assets/images/image-9.jpg') },  
-            { image: require('~/assets/images/image-10.jpg') },  
-            { image: require('~/assets/images/image-11.jpg') },  
-            { image: require('~/assets/images/image-12.jpg') },  
-            { image: require('~/assets/images/image-13.jpg') },  
-            { image: require('~/assets/images/image-14.jpg') },  
-            { image: require('~/assets/images/image-15.jpg') },  
-            { image: require('~/assets/images/image-16.jpg') },  
-            { image: require('~/assets/images/image-17.jpg') },  
-            { image: require('~/assets/images/image-18.jpg') },  
-            { image: require('~/assets/images/image-19.jpg') },  
-            { image: require('~/assets/images/image-20.jpg') },  
-            { image: require('~/assets/images/image-21.jpg') },  
-            { image: require('~/assets/images/image-22.jpg') },  
-            { image: require('~/assets/images/image-23.jpg') },  
-            { image: require('~/assets/images/image-24.jpg') },  
-            { image: require('~/assets/images/image-25.jpg') },  
-            { image: require('~/assets/images/image-26.jpg') },  
-            { image: require('~/assets/images/image-27.jpg') },  
-            { image: require('~/assets/images/image-28.jpg') },  
-            { image: require('~/assets/images/image-29.jpg') },  
-            { image: require('~/assets/images/image-30.jpg') },  
-            { image: require('~/assets/images/image-31.jpg') },  
-            { image: require('~/assets/images/image-32.jpg') },  
-            { image: require('~/assets/images/image-33.jpg') },  
-            { image: require('~/assets/images/image-34.jpg') },
-            { image: require('~/assets/images/image-35.jpg') },  
-            { image: require('~/assets/images/image-36.jpg') },  
-            { image: require('~/assets/images/image-37.jpg') },  
+            { image: 1 },  
+            { image: 2 },
+            { image: 3 },
+            { image: 4 },
+            { image: 5 },
+            { image: 6 },
+            { image: 7 },
+            { image: 8 },
+            { image: 9 },
+            { image: 10 },
+            { image: 11 },
+            { image: 12 },
+            { image: 13 },
+            { image: 14 },
+            { image: 15 },
+            { image: 16 },
+            { image: 17 },
+            { image: 18 },
+            { image: 19 },
+            { image: 20 },
+            { image: 21 },
+            { image: 22 },
+            { image: 23 },
+            { image: 24 },
+            { image: 25 },
+            { image: 26 },
+            { image: 27 },
+            { image: 28 },
+            { image: 29 },
+            { image: 30 },
+            { image: 31 },
+            { image: 32 },
+            { image: 33 },
+            { image: 34 },
+            { image: 35 },
+            { image: 36 },
+            { image: 37 },
         ]
     })
 }
@@ -88,5 +93,4 @@ export default {
 h1 {
   font-family: 'Sriracha', cursive;
 }
-
 </style>
