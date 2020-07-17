@@ -1,56 +1,43 @@
 <template>
-    <div>
-        <vueper-slides 
-            autoplay
-            class="no-shadow"
-            :visible-slides="3"
-            slide-multiple
-            :infinite="true" 
-            :arrows="false"
-            :bullets="false"
-            :gap="1"
-            progress
-            :slide-ratio="1 / 3"
-            :dragging-distance="70"
-            :breakpoints="{ 800: { 
-                visibleSlides: 1, 
-                slideRatio: 1,
-                } 
-            }">
-            <vueper-slide
-                v-for="(slide, i) in slides"
-                :key="i"
-                :image="slide.image"/>
-        </vueper-slides>
-
-        <div class="my-8">
-            <h1 class="text-brown-400 text-xl text-center font-medium uppercase">
-                Gracias por las fotos!
-            </h1>
-        </div>
+    <div class="w-auto h-64 mx-auto">
+        <!-- <span v-for="(slide, idx) in slides" :key="slide.idx"> -->
+            <img :src="image">
+        <!-- </span> -->
     </div>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
-
 export default {
-    components: { VueperSlides, VueperSlide },
-    data: () => ({
-        slides: [
-            { image: require('@/assets/images/image-1.jpg') },
-            { image: require('@/assets/images/image-2.jpg') },
-            { image: require('@/assets/images/image-3.jpg') },
-            { image: require('@/assets/images/image-4.jpg') },
-            { image: require('@/assets/images/image-5.jpg') },
-        ]
-    })
+    data() {
+        return {
+            id: 1,
+            // slides: [
+            //     {image: require('@/assets/images/image-1.jpg')},
+            //     {image: require('@/assets/images/image-2.jpg')},
+            // ]
+        }
+    },
+    // methods: {
+    //     getSlide() {
+    //         return require(`@/assets/images/image-${this.id}.jpg`)
+    //         this.id = this.id + 1
+    //     }
+    // },
+    computed: {
+        image: function () {
+            return require(`@/assets/images/image-${this.id}.jpg`)
+        }
+    },
+    created: function() {
+		setInterval(function() {
+            if (this.id<30) {
+                this.id++
+            }
+        }, 500);
+	}
 }
 </script>
 
 <style>
-h1 {
-  font-family: 'Sriracha', cursive;
-}
+
 </style>
