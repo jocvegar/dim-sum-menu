@@ -23,7 +23,7 @@
             <vueper-slide
                 v-for="(slide, i) in slides"
                 :key="i"
-                :image="getImage(slide.image)"/>
+                :image="require(`~/assets/images/image-${slide.image}.jpg`)"/>
         </vueper-slides>
         </no-ssr> 
         <div class="my-8">
@@ -40,11 +40,6 @@ import 'vueperslides/dist/vueperslides.css'
 
 export default {
     components: { VueperSlides, VueperSlide },
-    methods: {
-        getImage(name) {
-            return require(`~/assets/images/image-${name}.jpg`)
-        }
-    },
     data: () => ({
         pauseOnHover: true,
         autoPlaying: true,
