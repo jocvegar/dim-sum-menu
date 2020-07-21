@@ -160,8 +160,8 @@ export default {
       let d = new Date();
       d.setDate(d.getDate() + (5 + 7 - d.getDay()) % 7);
 
-      if (d.getDay() == 3 && d.getHours() > 19 && d.getMinutes() > 30) {
-        d.setDate(d.getDate() + (3 + 7 - d.getDay()));
+      if (d.getDay() == 5 && d.getHours() > 19 && d.getMinutes() > 30) {
+        d.setDate(d.getDate() + (5 + 7 - d.getDay()));
       }
       return d
     }
