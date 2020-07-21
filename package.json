@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.0",
+    "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.0.0-0",
     "mobile-device-detect": "^0.4.3",
     "nuxt": "^2.0.0",

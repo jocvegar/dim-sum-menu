@@ -4,7 +4,10 @@
             <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
                 MENU
             </h1>
-            <p class="text-2xl font-semibold my-2">semana del 17 de julio 2020</p>
+            <p class="text-2xl font-semibold my-2">
+              <!-- semana del 17 de julio 2020 -->
+              semana del {{ $moment(onlyFridays).format('LL') }}
+            </p>
         </div>
         <hr class="mt-1 mb-10">
         <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
@@ -152,6 +155,15 @@ export default {
           item.description.toLowerCase().match(word)
         )
       })
+    },
+    onlyFridays() {
+      let d = new Date();
+      d.setDate(d.getDate() + (5 + 7 - d.getDay()) % 7);
+
+      if (d.getDay() == 3 && d.getHours() > 19 && d.getMinutes() > 30) {
+        d.setDate(d.getDate() + (3 + 7 - d.getDay()));
+      }
+      return d
     }
   }
 }
