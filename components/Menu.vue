@@ -61,27 +61,41 @@ export default {
         },
         {
           id: 4,
-          title: "taco de arroz con cerdo",
+          title: "taco de arroz con cerdo asado",
           description: "Al vapor con carne de cerdo chasiu",
           units: "2 unidades",
           price: "80"
         },
         {
           id: 5,
+          title: "taco de arroz con cerdo",
+          description: "Al vapor con carne de cerdo al vapor",
+          units: "2 unidades",
+          price: "80"
+        },
+        {
+          id: 6,
+          title: "taco de arroz mixto",
+          description: "Al vapor con carne de cerdo chasiu y camarones",
+          units: "2 unidades",
+          price: "90"
+        },
+        {
+          id: 7,
           title: 'Pastelitos de Carne',
           description: 'Pastelitos  de carne de cerdo y hongo shiitake fritos',
           units: '2 unidades',
           price: '65'
         },
         {
-          id: 6,
+          id: 8,
           title: 'Pastelitos de Malanga',
           description: 'Pastelitos rellenos de carne de cerdo',
           units: '2 unidades',
           price: '65'
         },
         {
-          id: 7,
+          id: 9,
           title: 'Pastelitos de Frijol',
           description:
             'Pastelitos rellenos con frijol dulce, fritos y cubiertos con semillas de ajonjolí',
@@ -89,28 +103,28 @@ export default {
           price: '65'
         },
         // {
-        //   id: 8,
+        //   id: 10,
         //   title: 'Pastelitos de Nabo',
         //   description: 'Pastelitos rellenos con carne de cerdo',
         //   units: '2 unidades',
         //   price: '65'
         // },
         // {
-        //   id: 9,
+        //   id: 11,
         //   title: 'Tai Pao (Steamed pork buns)',
         //   description: 'Panecillos al vapor con carne de cerdo',
         //   units: '2 unidades',
         //   price: '65'
         // },
         {
-          id: 10,
+          id: 12,
           title: 'Tai Pao Al Horno(Sticky pork buns)',
           description: 'Panecillos glaceados al horno con carne de cerdo',
           units: '2 unidades',
           price: '65'
         },
         {
-          id: 11,
+          id: 13,
           title: 'cebollina',
           description: 'Cebollina con salsa soya',
           units: '1 porción',

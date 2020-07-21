@@ -18,7 +18,7 @@
         <div class="text-base sm:flex-grow">
             <nuxt-link 
                 @click.native="open = false"
-                :to=foto_link
+                to="/fotos"
                 class="no-underline block mt-4 text-lg sm:inline-block sm:mt-0 text-brown-800 hover:text-white mr-4">
                     Fotos
             </nuxt-link> 
@@ -60,9 +60,6 @@ export default {
     phone_link() {
       return isMobile ? 'https://wa.me/+50499223803' : 'https://api.whatsapp.com/send?phone=+50499223803'
     },
-    foto_link() {
-      return isMobile ? '/slides' : '/fotos'
-    }
   }
 }
 </script>
