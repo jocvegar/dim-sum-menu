@@ -8,5 +8,4 @@
 Made a nuxt app to display delicious food! 
 ```
 
-[Preview me](https://wan-fu.netlify.app/)
-https://wan-fu.netlify.app/
+[Preview me @ https://wan-fu.netlify.app/](https://wan-fu.netlify.app/)
