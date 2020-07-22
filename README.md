@@ -1,22 +1,12 @@
-# dim-sum
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6aef38b9-eb59-4865-af91-8b6e8f4bf40a/deploy-status)](https://app.netlify.com/sites/wan-fu/deploys)
+
+# Wan Fu Dim Sum
 
 > Menu de dim sum
 
-## Build Setup
-
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+Made a nuxt app to display delicious food! 
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[Preview me](https://wan-fu.netlify.app/)
+https://wan-fu.netlify.app/
