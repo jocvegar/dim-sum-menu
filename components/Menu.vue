@@ -4,7 +4,7 @@
             <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
                 MENU
             </h1>
-            <p class="text-2xl font-semibold my-2">
+            <p class="text-lg md:text-2xl font-semibold my-2">
               <!-- semana del 17 de julio 2020 -->
               semana del {{ $moment(onlyFridays).format('LL') }}
             </p>
@@ -160,7 +160,7 @@ export default {
       let d = new Date();
       d.setDate(d.getDate() + (5 + 7 - d.getDay()) % 7);
 
-      if (d.getDay() == 5 && d.getHours() > 19 && d.getMinutes() > 30) {
+      if (d.getDay() == 5 && d.getHours() > 20) {
         d.setDate(d.getDate() + (5 + 7 - d.getDay()));
       }
       return d
