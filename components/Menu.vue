@@ -5,8 +5,7 @@
                 MENU
             </h1>
             <p class="text-lg md:text-2xl font-semibold my-2">
-              <!-- semana del 17 de julio 2020 -->
-              semana del {{ $moment(onlyFridays).format('LL') }}
+              <!-- semana del {{ $moment(onlyFridays).format('LL') }} -->
             </p>
         </div>
         <hr class="mt-1 mb-10">
@@ -105,13 +104,13 @@ export default {
           units: '2 unidades',
           price: '65'
         },
-        // {
-        //   id: 10,
-        //   title: 'Pastelitos de Nabo',
-        //   description: 'Pastelitos rellenos con carne de cerdo',
-        //   units: '2 unidades',
-        //   price: '65'
-        // },
+        {
+          id: 10,
+          title: 'Pastelitos de Nabo',
+          description: 'Pastelitos rellenos con carne de cerdo',
+          units: '2 unidades',
+          price: '65'
+        },
         // {
         //   id: 11,
         //   title: 'Tai Pao (Steamed pork buns)',
