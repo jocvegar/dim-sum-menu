@@ -104,13 +104,13 @@ export default {
           units: '2 unidades',
           price: '65'
         },
-        {
-          id: 10,
-          title: 'Pastelitos de Nabo',
-          description: 'Pastelitos rellenos con carne de cerdo',
-          units: '2 unidades',
-          price: '65'
-        },
+        // {
+        //   id: 10,
+        //   title: 'Pastelitos de Nabo',
+        //   description: 'Pastelitos rellenos con carne de cerdo',
+        //   units: '2 unidades',
+        //   price: '65'
+        // },
         // {
         //   id: 11,
         //   title: 'Tai Pao (Steamed pork buns)',
@@ -118,13 +118,13 @@ export default {
         //   units: '2 unidades',
         //   price: '65'
         // },
-        {
-          id: 12,
-          title: 'Tai Pao Al Horno(Sticky pork buns)',
-          description: 'Panecillos glaceados al horno con carne de cerdo',
-          units: '2 unidades',
-          price: '65'
-        },
+        // {
+        //   id: 12,
+        //   title: 'Tai Pao Al Horno(Sticky pork buns)',
+        //   description: 'Panecillos glaceados al horno con carne de cerdo',
+        //   units: '2 unidades',
+        //   price: '65'
+        // },
         {
           id: 13,
           title: 'cebollina',
