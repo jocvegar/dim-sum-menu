@@ -127,6 +127,13 @@ export default {
         // },
         {
           id: 13,
+          title: 'sopa de wonton',
+          description: 'Sopa de wonton de cerdo y camarones',
+          units: '1 unidad',
+          price: '180'
+        },
+        {
+          id: 14,
           title: 'cebollina',
           description: 'Cebollina con salsa soya',
           units: '1 porción',
