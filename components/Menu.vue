@@ -129,7 +129,7 @@ export default {
           id: 13,
           title: 'sopa de wonton',
           description: 'Sopa de wonton de cerdo y camarones',
-          units: '1 unidad',
+          units: '1 porción',
           price: '180'
         },
         {
