@@ -44,7 +44,7 @@
         >
           <i class="far fa-calendar-alt text-4xl"></i>
           <p class="font-medium text-lg text-center">
-            Comida se entrega los días viernes por la mañana
+            Comida se entrega los días viernes de 7:00am a 11:30am
           </p>
         </div>
       </div>
