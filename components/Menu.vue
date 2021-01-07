@@ -125,13 +125,13 @@ export default {
         //   units: '2 unidades',
         //   price: '65'
         // },
-        {
-          id: 13,
-          title: 'sopa de wonton',
-          description: 'Sopa de wonton de cerdo y camarones',
-          units: '1 porción',
-          price: '180'
-        },
+        // {
+        //   id: 13,
+        //   title: 'sopa de wonton',
+        //   description: 'Sopa de wonton de cerdo y camarones',
+        //   units: '1 porción',
+        //   price: '180'
+        // },
         {
           id: 14,
           title: 'cebollina',

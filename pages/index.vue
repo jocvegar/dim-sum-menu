@@ -16,13 +16,13 @@
     </section>
     <section class="mx-auto px-5 my-5">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <a :href = phone_link>
+        <a :href="phone_link">
           <div
             class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg"
           >
-            <i class="fa fa-phone text-4xl" aria-hidden="true"></i>
+            <i class="fab fa-whatsapp text-4xl" aria-hidden="true"></i>
             <p class="font-medium text-lg text-center">
-              Haz tu pedido los días 
+              Haz tu pedido los días
               <span class="font-black">
                 miércoles o jueves
               </span>
@@ -30,14 +30,13 @@
               <span class="font-black">9922-3803</span>
             </p>
           </div>
-        </a>  
+        </a>
         <div
           class="flex flex-col items-center justify-around bg-brown-500 h-40 px-5 py-5 text-gray-800 rounded-lg"
         >
-          <i class="fas fa-motorcycle text-4xl"></i>
+          <i class="fas fa-store text-4xl"></i>
           <p class="font-medium text-lg text-center">
-            Servicio a domicilio <br>
-            o pick-up
+            Pick-up solamante
           </p>
         </div>
         <div
@@ -69,8 +68,7 @@
 
 <script>
 import Menu from '~/components/Menu.vue'
-import { isMobile } from 'mobile-device-detect';
-
+import { isMobile } from 'mobile-device-detect'
 
 export default {
   components: {
@@ -86,7 +84,9 @@ export default {
       return process.env.test
     },
     phone_link() {
-      return isMobile ? 'https://wa.me/+50499223803' : 'https://api.whatsapp.com/send?phone=+50499223803'
+      return isMobile
+        ? 'https://wa.me/+50499223803'
+        : 'https://api.whatsapp.com/send?phone=+50499223803'
     }
   },
   methods: {
