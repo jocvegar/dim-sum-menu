@@ -48,7 +48,7 @@
             <span class="font-black">
               sábados
             </span>
-            de 7:00am a 11:30am
+            de 8:00am a 11:30am
           </p>
         </div>
       </div>
