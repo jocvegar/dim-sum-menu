@@ -24,7 +24,7 @@
             <p class="font-medium text-lg text-center">
               Haz tu pedido los días
               <span class="font-black">
-                jueves o viernes
+                miercoles o jueves
               </span>
               por WhatsApp
               <span class="font-black">9922-3803</span>
@@ -46,7 +46,7 @@
           <p class="font-medium text-lg text-center">
             Comida se entrega los días
             <span class="font-black">
-              sábados
+              viernes
             </span>
             de 8:00am a 11:30am
           </p>
