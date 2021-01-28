@@ -24,7 +24,8 @@
             <p class="font-medium text-lg text-center">
               Haz tu pedido los días
               <span class="font-black">
-                miercoles o jueves
+                <!-- miercoles o jueves -->
+                jueves
               </span>
               por WhatsApp
               <span class="font-black">9922-3803</span>
