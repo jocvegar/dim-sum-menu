@@ -1,36 +1,45 @@
 <template>
-    <div class="container mx-auto px-6">
-        <div class="flex flex-col items-center">
-            <h1 v-if="$nuxt.$route.name != 'menu'" class="menu text-4xl font-bold underline my-4">
-                MENU
-            </h1>
-            <p class="text-lg md:text-2xl font-semibold my-2">
-              <!-- semana del {{ $moment(onlyFridays).format('LL') }} -->
-            </p>
-        </div>
-        <hr class="mt-1 mb-10">
-        <div  v-if="$nuxt.$route.name == 'menu'" class= "relative mx-auto w-full md:w-3/4 my-8 ">
-            <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
-            <input 
-                v-model="searchWord" 
-                v-on:change="search"
-                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="busqueda...">
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div v-for="item in filteredMenuItems" :key="item.id" class="h-32">
-                <div class="flex flex-col justify-around border-b min-h-full">
-                    <div class="mb-2">
-                        <h1 class="title text-lg font-bold">{{ item.title | upcase }}</h1>
-                        <h4 class="description text-base">{{ item.description }}</h4>
-                    </div>
-                    <div class="font-semibold pb-1">
-                        <p>{{ item.units }} x Lps. {{ item.price }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col items-center">
+      <h1
+        v-if="$nuxt.$route.name != 'menu'"
+        class="menu text-4xl font-bold underline my-4"
+      >
+        MENU
+      </h1>
+      <p class="text-lg md:text-2xl font-semibold my-2">
+        <!-- semana del {{ $moment(onlyFridays).format('LL') }} -->
+      </p>
     </div>
+    <hr class="mt-1 mb-10" />
+    <div
+      v-if="$nuxt.$route.name == 'menu'"
+      class="relative mx-auto w-full md:w-3/4 my-8 "
+    >
+      <i class="absolute fa fa-search text-gray-400" aria-hidden="true"></i>
+      <input
+        v-model="searchWord"
+        v-on:change="search"
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        placeholder="busqueda..."
+      />
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div v-for="item in filteredMenuItems" :key="item.id" class="h-32">
+        <div class="flex flex-col justify-around border-b min-h-full">
+          <div class="mb-2">
+            <h1 class="title text-lg font-bold">{{ item.title | upcase }}</h1>
+            <h4 class="description text-base">{{ item.description }}</h4>
+          </div>
+          <div class="font-semibold pb-1">
+            <p>{{ item.units }} x Lps. {{ item.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -56,31 +65,31 @@ export default {
         },
         {
           id: 3,
-          title: "taco de arroz con camarones",
-          description: "Al vapor con camarones",
-          units: "2 unidades",
-          price: "90"
+          title: 'taco de arroz con camarones',
+          description: 'Al vapor con camarones',
+          units: '2 unidades',
+          price: '90'
         },
         {
           id: 4,
-          title: "taco de arroz con cerdo asado",
-          description: "Al vapor con carne de cerdo chasiu",
-          units: "2 unidades",
-          price: "80"
+          title: 'taco de arroz con cerdo asado',
+          description: 'Al vapor con carne de cerdo chasiu',
+          units: '2 unidades',
+          price: '80'
         },
         {
           id: 5,
-          title: "taco de arroz con cerdo",
-          description: "Al vapor con carne de cerdo al vapor",
-          units: "2 unidades",
-          price: "80"
+          title: 'taco de arroz con cerdo',
+          description: 'Al vapor con carne de cerdo al vapor',
+          units: '2 unidades',
+          price: '80'
         },
         {
           id: 6,
-          title: "taco de arroz mixto",
-          description: "Al vapor con carne de cerdo chasiu y camarones",
-          units: "2 unidades",
-          price: "90"
+          title: 'taco de arroz mixto',
+          description: 'Al vapor con carne de cerdo chasiu y camarones',
+          units: '2 unidades',
+          price: '90'
         },
         {
           id: 7,
@@ -104,36 +113,43 @@ export default {
           units: '2 unidades',
           price: '65'
         },
+        {
+          id: 10,
+          title: 'Tacos Fritos',
+          description: 'Tacos fritos y crujientes',
+          units: '4 unidades',
+          price: '120'
+        },
         // {
-        //   id: 10,
+        //   id: 11,
         //   title: 'Pastelitos de Nabo',
         //   description: 'Pastelitos rellenos con carne de cerdo',
         //   units: '2 unidades',
         //   price: '65'
         // },
         // {
-        //   id: 11,
+        //   id: 12,
         //   title: 'Tai Pao (Steamed pork buns)',
         //   description: 'Panecillos al vapor con carne de cerdo',
         //   units: '2 unidades',
         //   price: '65'
         // },
         // {
-        //   id: 12,
+        //   id: 13,
         //   title: 'Tai Pao Al Horno(Sticky pork buns)',
         //   description: 'Panecillos glaceados al horno con carne de cerdo',
         //   units: '2 unidades',
         //   price: '65'
         // },
         // {
-        //   id: 13,
+        //   id: 14,
         //   title: 'sopa de wonton',
         //   description: 'Sopa de wonton de cerdo y camarones',
         //   units: '1 porción',
         //   price: '180'
         // },
         {
-          id: 14,
+          id: 15,
           title: 'cebollina',
           description: 'Cebollina con salsa soya',
           units: '1 porción',
@@ -163,11 +179,11 @@ export default {
       })
     },
     onlyFridays() {
-      let d = new Date();
-      d.setDate(d.getDate() + (5 + 7 - d.getDay()) % 7);
+      let d = new Date()
+      d.setDate(d.getDate() + ((5 + 7 - d.getDay()) % 7))
 
       if (d.getDay() == 5 && d.getHours() > 20) {
-        d.setDate(d.getDate() + (5 + 7 - d.getDay()));
+        d.setDate(d.getDate() + (5 + 7 - d.getDay()))
       }
       return d
     }
